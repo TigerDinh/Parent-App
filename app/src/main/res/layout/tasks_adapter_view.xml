@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/primary_theme"
+    android:paddingBottom="15dp"
+    >
+
+    <TextView
+        android:id="@+id/tvTaskDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/TextAppearance.AppCompat.White"
+        android:text="@string/task"
+        android:layout_margin="20dp"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvAssignedTo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/TextAppearance.AppCompat.White"
+        android:text="@string/assigned_to"
+        app:layout_constraintStart_toStartOf="@+id/tvTaskDescription"
+        app:layout_constraintTop_toBottomOf="@+id/tvTaskDescription" />
+
+    <TextView
+        android:id="@+id/tvChildAssigned"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/TextAppearance.AppCompat.White"
+        android:paddingHorizontal="5dp"
+        android:text="@string/child_name"
+        app:layout_constraintStart_toEndOf="@+id/tvAssignedTo"
+        app:layout_constraintTop_toTopOf="@+id/tvAssignedTo" />
+
+    <Button
+        android:id="@+id/btnShowTask"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/ic_baseline_keyboard_arrow_up_24"
+        android:backgroundTint="@color/white"
+        android:layout_marginEnd="10dp"
+        android:rotation="90"
+        app:layout_constraintBottom_toBottomOf="@+id/tvAssignedTo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvTaskDescription" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

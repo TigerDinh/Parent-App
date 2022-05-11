@@ -1,0 +1,17 @@
+Iteration 1 (Due Nov 8)
+Scrum Master: Supreet
+Product Owner: Harrison
+Repo Manager: Zaid
+Team Member: Tiger
+
+Iteration 2 (Due Nov 22)
+Scrum Master: Harrison
+Product Owner: Zaid
+Repo Manager: Tiger
+Team Member: Supreet
+
+Iteration 3 (Due Dec 6)
+Scrum Master: Zaid
+Product Owner: Tiger
+Repo Manager: Supreet
+Team Member: Harrison
