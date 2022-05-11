@@ -1,0 +1,117 @@
+<resources>
+    <string name="app_name">ParentApp</string>
+    <string name="coin_flip">CoinFlip</string>
+    <string name="timeout">Timeout</string>
+    <string name="timeout_activity">Timeout Activity</string>
+    <string name="coin_flip_activity">CoinFlip Activity</string>
+    <string name="main_menu">Main Menu</string>
+    <string name="choose_nheads">Choose\nheads</string>
+    <string name="choose_ntails">Choose\nTails</string>
+    <string name="child_name_here">Child Name Here</string>
+    <string name="choosing">Choosing</string>
+    <string name="winner">Winner</string>
+    <string name="loser">Loser</string>
+    <string name="heads">Heads</string>
+    <string name="tails">Tails</string>
+    <string name="choose_tails">Choose Tails</string>
+    <string name="loonie_to_be_flipped">Loonie to be flipped</string>
+    <string name="tap_to_flip">Tap To Flip</string>
+    <string name="reset">Reset</string>
+    <string name="choosing_child">Choosing Child</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="result">Result</string>
+    <string name="choice">Choice</string>
+    <string name="chooser">Chooser:</string>
+    <string name="choosers_name">Choosers Name</string>
+    <string name="ivWonFlipDesc">if the chooser won/lost</string>
+    <string name="ivResultDesc">What side the coin landed</string>
+    <string name="ivChoiceMadeDesc">what side of the coin the chooser chose</string>
+    <string name="ivDateHint">2021–11–03 1:35pm</string>
+    <string name="coin_flip_history">Coin Flip History</string>
+    <string name="save">Save</string>
+    <string name="delete">Delete</string>
+    <string name="please_enter_child_name">Please Enter Child Name</string>
+    <string name="add_children">Add Children</string>
+    <string name="name">Name</string>
+    <string name="my_children">My Children</string>
+    <string name="timeout_timer_settings_title">Timeout Timer Settings</string>
+    <string name="timeout_timer_title">Timeout Timer</string>
+    <string name="minute">minute</string>
+    <string name="minutes">minutes</string>
+    <string name="end_of_timer">0:00</string>
+    <string name="custom_timer_error_msg">Please insert the time you want\nbefore starting the custom timer</string>
+    <string name="choose_timer_length"><u>Choose Timer Length</u></string>
+    <string name="create_custom_timer"><u>Create Custom Timer</u></string>
+    <string name="resume">RESUME</string>
+    <string name="stop">STOP</string>
+    <string name="timer_stopped">Timer Stopped</string>
+    <string name="notification_channel_name">timer channel</string>
+    <string name="channel_description">Channel for timer notifications</string>
+    <string name="timer_countdown">Timer Countdown</string>
+    <string name="timer_settings">Timer Settings</string>
+    <string name="RESET">RESET</string>
+    <string name="mins">mins</string>
+    <string name="start_timer">Start Timer</string>
+    <string name="start_custom_timer">Start Custom Timer</string>
+    <string name="quit">Quit</string>
+    <string name="list_of_tasks">List of Tasks</string>
+    <string name="add_tasks">add tasks</string>
+    <string name="creating_new_task">Creating New Task</string>
+    <string name="editing_task">Editing Task</string>
+    <string name="task_description">Task Description</string>
+    <string name="turn">Turn</string>
+    <string name="child_name">child name</string>
+    <string name="picture_of_child">picture of child</string>
+    <string name="assigned_to">Assigned to:</string>
+    <string name="task">Task</string>
+    <string name="finished">Finished</string>
+    <string name="completed">Completed</string>
+    <string name="complete_task">Complete Task</string>
+    <string name="coin_flip_title">Coin Flip</string>
+    <string name="queue_title">Queue</string>
+    <string name="introduction_about_us">Hello. We are a group of 4 called Oxygen-7 that
+        developed this ParentApp together. The members of this group are:\n
+        \nZaid Arshad\nSupreet Singh Dhillon\nYuhao Xiao\nHo Tiger Dinh\n
+    </string>
+    <string name="resource_image_used">IMAGE
+        \nCoin Image: https://en.wikipedia.org/wiki/Loonie
+        \nTimer Setting Background: https://www.wallpaperflare.com/hourglass-sandglass-life-timepiece-clock-minute-timer-wallpaper-mfwiq/crop
+        \nApp Icon: https://www.kindpng.com/imgv/oRwobT_involvement-of-parents-family-icon-png-transparent-png/
+        \nTimer Background: https://www.istockphoto.com/photo/lake-plansee-tirol-austria-gm108327817-12809214
+        \nHelp Screen Background: https://wallpaperaccess.com/aesthetic-computer
+        \n\n\n
+    </string>
+    <string name="resource_sound_used">SOUND
+        \nTimer Alarm Sound = https://www.soundjay.com/bell-sound-effect.html
+        \nCoin Flip Sound = https://www.soundjay.com/coin-sounds-1.html
+        \nButton Pressing Sound = https://soundbible.com/tags-button.html
+        \n\n\n
+    </string>
+    <string name="resource_code_used">CODE
+        \nCoin Flip Record: https://attacomsian.com/blog/gson-write-json-file
+        \nWriting Date onto adapter: https://stackoverflow.com/questions/39192945/serialize-java-8-localdate-as-yyyy-mm-dd-with-gson and from Dr. Victor Cheung\'s 213 Class Assignment 1 description
+        \nCropImage: https://github.com/ArthurHub/Android-Image-Cropper
+    </string>
+    <string name="child_pic">child pic</string>
+    <string name="task_history">Task History</string>
+    <string name="task_name">Task Name</string>
+    <string name="completed_at">Completed At</string>
+    <string name="_2021_11_03_11_35am">2021 11 03 11:35AM</string>
+    <string name="anonymous">anonymous</string>
+    <string name="completed_on">Completed on</string>
+    <string name="percent_25">25%</string>
+    <string name="percent_25_with_checkmark">\u2713 25%</string>
+    <string name="percent_50">50%</string>
+    <string name="percent_50_with_checkmark">\u2713 50%</string>
+    <string name="percent_75">75%</string>
+    <string name="percent_75_with_checkmark">\u2713 75%</string>
+    <string name="percent_100">100%</string>
+    <string name="percent_100_with_checkmark">\u2713 100%</string>
+    <string name="percent_200">200%</string>
+    <string name="percent_200_with_checkmark">\u2713 200%</string>
+    <string name="percent_300">300%</string>
+    <string name="percent_300_with_checkmark">\u2713 300%</string>
+    <string name="percent_400">400%</string>
+    <string name="percent_400_with_checkmark">\u2713 400%</string>
+    <string name="default_time_speed">Time @100%</string>
+</resources>

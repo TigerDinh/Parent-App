@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary_theme"
+    tools:context=".application.coinflip.CoinFlipActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/glMid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.46"/>
+
+    <TextView
+        android:id="@+id/tvChoosingPrompt"
+        style="@style/TextAppearance.AppCompat.Base"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="132dp"
+        android:text="@string/choosing"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/tvChildName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/portrait"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintBottom_toTopOf="@+id/layoutChoosing"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tvChildName"
+        android:src="@drawable/default_child_image"
+        android:contentDescription="@string/child_pic" />
+
+    <TextView
+        android:id="@+id/tvChildName"
+        style="@style/TextAppearance.AppCompat.Base"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/choosing_child"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/portrait"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/anonymous"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="3dp"
+        app:layout_constraintBottom_toTopOf="@id/portrait"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.64"
+        app:layout_constraintStart_toEndOf="@+id/tvChildName"
+        app:layout_constraintStart_toStartOf="@id/tvChildName"
+        app:srcCompat="@drawable/ic_baseline_close_24"
+        android:contentDescription="@string/delete" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:id="@+id/layoutFlipping"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/layoutChoosing"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/tvTapToFlip"
+            style="@style/TextAppearance.AppCompat.Base"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:shadowColor="@color/black"
+            android:shadowRadius="10"
+            android:text="@string/tap_to_flip"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:translationZ="1dp"
+            app:layout_constraintBottom_toBottomOf="@+id/ivCoin"
+            app:layout_constraintEnd_toEndOf="@+id/ivCoin"
+            app:layout_constraintStart_toStartOf="@+id/ivCoin"
+            app:layout_constraintTop_toTopOf="@+id/ivCoin" />
+
+        <ImageView
+            android:id="@+id/ivCoin"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:contentDescription="@string/loonie_to_be_flipped"
+            android:src="@drawable/loonie_head"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.45" />
+
+        <TextView
+            android:id="@+id/tvCurrentCoinFace"
+            style="@style/TextAppearance.AppCompat.Base"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/heads"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="@+id/ivCoin"
+            app:layout_constraintStart_toStartOf="@+id/ivCoin"
+            app:layout_constraintTop_toBottomOf="@+id/ivCoin" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layoutChoosing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/ivChooseHeads"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_marginStart="40dp"
+            android:contentDescription="@string/loonie_to_be_flipped"
+            android:src="@drawable/loonie_head"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvChooseHeads"
+            style="@style/TextAppearance.AppCompat.Base"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/heads"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="@+id/ivChooseHeads"
+            app:layout_constraintStart_toStartOf="@+id/ivChooseHeads"
+            app:layout_constraintTop_toBottomOf="@+id/ivChooseHeads" />
+
+        <ImageView
+            android:id="@+id/ivChooseTails"
+            android:layout_width="130dp"
+            android:layout_height="130dp"
+            android:layout_marginEnd="40dp"
+            android:contentDescription="@string/loonie_to_be_flipped"
+            android:src="@drawable/loonie_tail"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvChooseTails"
+            style="@style/TextAppearance.AppCompat.Base"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/tails"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="@+id/ivChooseTails"
+            app:layout_constraintStart_toStartOf="@+id/ivChooseTails"
+            app:layout_constraintTop_toBottomOf="@+id/ivChooseTails" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/flHistory"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:translationZ="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnHistory"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:background="@drawable/ic_baseline_keyboard_arrow_up_24"
+        android:backgroundTint="@color/white"
+        android:scaleX="2"
+        android:scaleY="2"
+        android:translationZ="3dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

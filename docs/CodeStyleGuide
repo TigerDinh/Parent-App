@@ -1,0 +1,35 @@
+Clean & Simple Code
+     - Neat onCreate
+     - Proper use of space and indentation
+
+Use Meaningful Names for functions and variables
+
+Naming Conventions
+    - Constants must be all upper case, with multiple words separated by '_':
+    - Class names must start with an upper case letter, and use CamelCase.
+        Classes should be named in terms of a singular noun:
+    - Do not use prefixes for variables: don't encode the type (like iSomeNumber, or strName),
+        do not prefix member variables of a class have with m_.
+    - Boolean variables should be named so that they make sense in an if statement
+    - Use named constants instead of literal numbers (magic numbers). It is often acceptable
+        to use 0 and 1; however, it must be clear what they mean:
+
+Indentation and Braces {...}
+    - Use when possible
+
+Statements and Spacing
+    - Declare each variable in its own definition, rather than together (int i, j).
+
+Classes
+    - Inside a class, the fields must be at the top of the class, followed by the methods.
+
+Comments
+    - Comments which are on one line should use the // style. Comments which are or a couple lines
+         may use either the //, or /* ... */ style. Comments which
+         are many lines long should use /* ... */.
+
+Comments vs Functions
+    - Your code should not need many comments. Generally, before writing a comment,
+        consider how you can refactor your code to remove the need to "freshen" it up with a comment.
+
+

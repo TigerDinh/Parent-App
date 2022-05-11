@@ -1,0 +1,38 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- "Mark Favorite", should appear as action button if possible -->
+    <item
+        android:id="@+id/timer_speed_at_25_percent"
+        android:title="@string/percent_25"
+        />
+    <item
+        android:id="@+id/timer_speed_at_50_percent"
+        android:title="@string/percent_50"
+        />
+    <item
+        android:id="@+id/timer_speed_at_75_percent"
+        android:title="@string/percent_75"
+        />
+    <item
+        android:id="@+id/timer_speed_at_100_percent"
+        android:title="@string/percent_100_with_checkmark"
+        />
+    <item
+        android:id="@+id/timer_speed_at_200_percent"
+        android:title="@string/percent_200"
+        />
+    <item
+        android:id="@+id/timer_speed_at_300_percent"
+        android:title="@string/percent_300"
+        />
+    <item
+        android:id="@+id/timer_speed_at_400_percent"
+        android:title="@string/percent_400"
+        />
+
+
+    <!-- Settings, should always be in the overflow -->
+
+
+</menu>

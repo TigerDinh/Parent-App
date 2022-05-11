@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/MainMenuActivity"
+    android:background="@drawable/main_activity_background_list"
+    tools:context=".application.menu.MainMenuActivity" >
+
+    <Button
+        android:id="@+id/btnListOfTasks"
+        android:layout_width="150sp"
+        android:layout_height="wrap_content"
+        android:text="@string/list_of_tasks"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="@+id/configureBtn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.831"
+        app:layout_constraintStart_toEndOf="@+id/configureBtn"
+        app:layout_constraintTop_toTopOf="@+id/configureBtn"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btnHelpScreen"
+        android:layout_width="150sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="75dp"
+        android:text="HELP"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonCoinFlip"
+        app:layout_constraintVertical_bias="0.121" />
+
+    <Button
+        android:id="@+id/btnTimeout"
+        android:layout_width="150sp"
+        android:layout_height="wrap_content"
+        android:text="@string/timeout"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="@+id/buttonCoinFlip"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.831"
+        app:layout_constraintStart_toEndOf="@+id/buttonCoinFlip"
+        app:layout_constraintTop_toTopOf="@+id/buttonCoinFlip" />
+
+    <Button
+        android:id="@+id/buttonCoinFlip"
+        android:layout_width="150sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="75dp"
+        android:text="@string/coin_flip"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.061"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/configureBtn"
+        app:layout_constraintVertical_bias="0.12" />
+
+    <Button
+        android:id="@+id/configureBtn"
+        android:layout_width="150sp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:text="@string/my_children"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.042"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.236" />
+
+    <Button
+        android:id="@+id/takeBreath"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TAKE BREATH"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.087" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
